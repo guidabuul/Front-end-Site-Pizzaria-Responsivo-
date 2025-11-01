@@ -1,4 +1,4 @@
-/* ===== BASE ===== */
+/*Reset*/
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ body {
   font-family: "Epilogue", Arial, Helvetica, sans-serif;
   background-color: #f8f6f6;
   color: #111827;
-  padding-bottom: 4.6rem; /* espaço para o menu fixo */
+  padding-bottom: 4.6rem; 
 }
 
 img {
@@ -29,7 +29,6 @@ h1 {
   font-weight: 800;
 }
 
-/* ===== TOPO ===== */
 .topo {
   background: #fff;
   padding: 16px 16px 12px;
@@ -53,7 +52,6 @@ h1 {
   vertical-align: middle;
 }
 
-/* ===== SAUDAÇÃO E PONTOS (FLEX BÁSICO) ===== */
 .linha-saudacao {
   display: flex;
   justify-content: space-between;
@@ -96,8 +94,7 @@ h1 {
   font-weight: 700;
 }
 
-/* ===== CONTEÚDO ===== */
-.miolo {
+.meio {
   padding: 0 12px 12px;
 }
 
@@ -111,7 +108,6 @@ h1 {
   margin: 0 0 12px 0;
 }
 
-/* ===== PROMOÇÕES ===== */
 .cartao {
   background: #fff;
   border: 1px solid #eee;
@@ -143,15 +139,14 @@ h1 {
   font-size: 0.95rem;
 }
 
-/* ===== PEÇA NOVAMENTE ===== */
 .cartao-pedido {
   display: flex;
   align-items: flex-start;
-  gap: 14px; /* mais espaço entre imagem e texto */
+  gap: 14px; 
   background: #fff;
   border: 1px solid #eee;
   border-radius: 16px;
-  padding: 14px; /* mais respiro interno */
+  padding: 14px; 
   margin-bottom: 18px;
   flex-wrap: nowrap;
 }
@@ -189,7 +184,6 @@ h1 {
   display: inline-block;
 }
 
-/* ===== MENU INFERIOR (FLEX BÁSICO) ===== */
 .barra {
   position: fixed;
   left: 0;
@@ -225,7 +219,6 @@ h1 {
   color: #ec5413;
 }
 
-/* ===== RESPONSIVIDADE (AULA 11) ===== */
 @media (max-width: 360px) {
   html {
     font-size: 15px;
@@ -251,7 +244,7 @@ h1 {
     padding: 18px 18px 12px;
   }
 
-  .miolo {
+  .meio {
     padding: 0 16px 16px;
   }
 
