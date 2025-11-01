@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzalivery</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+  <body>
+    <h1>Pizzalivery</h1>
+
+    <header class="topo">
+      <p class="endereco">
+  Rua Mesquita, 248 <i data-lucide="chevron-down" class="seta"></i>
+</p>
+      <div class="linha-saudacao">
+        <div class="texto-usuario">
+          <p class="ola">Olá, Daniela</p>
+          <a class="link-pontos" href="#">Ver meus pontos</a>
+        </div>
+        <div class="caixa-pontos">
+          <span class="pontos"><strong>112</strong> pontos</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="meio">
+      <section class="secao">
+        <h2 class="titulo-secao">Promoções</h2>
+
+        <article class="cartao">
+          <div class="moldura-imagem">
+            <img class="img-promocao" src="./img/fresh_pizza.webp" alt="Pizza em dobro"/>
+          </div>
+          <p class="texto-forte">Pizza em dobro</p>
+          <p class="descricao-promo">Compre uma pizza e ganhe outra</p>
+        </article>
+      </section>
+
+      <section class="secao">
+        <h2 class="titulo-secao">Peça novamente</h2>
+
+        <article class="cartao-pedido">
+          <img class="marguerita" src="./img/marguerita.jpg" alt="Pizza Margherita"/>
+          <div class="bloco-info">
+            <p class="sabor">Margherita</p>
+            <p class="preco">R$ 93,00</p>
+            <a class="botao-adicionar" href="#">Adicionar à sacola</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <nav class="barra" aria-label="Navegação principal">
+      <a class="botao-aba ativa" href="#">
+        <i data-lucide="home"></i>
+        <span>Início</span>
+      </a>
+      <a class="botao-aba" href="#">
+        <i data-lucide="search"></i>
+        <span>Busca</span>
+      </a>
+      <a class="botao-aba" href="#">
+        <i data-lucide="menu"></i>
+        <span>Menu</span>
+      </a>
+      <a class="botao-aba" href="#">
+        <i data-lucide="receipt"></i>
+        <span>Pedidos</span>
+      </a>
+      <a class="botao-aba" href="#">
+        <i data-lucide="user"></i>
+        <span>Perfil</span>
+      </a>
+    </nav>
+
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script> lucide.createIcons(); </script>
+  </body>
+</html>

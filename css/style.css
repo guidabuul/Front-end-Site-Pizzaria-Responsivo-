@@ -1,0 +1,261 @@
+/* ===== BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.25;
+  font-family: "Epilogue", Arial, Helvetica, sans-serif;
+  background-color: #f8f6f6;
+  color: #111827;
+  padding-bottom: 4.6rem; /* espaço para o menu fixo */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 800;
+}
+
+/* ===== TOPO ===== */
+.topo {
+  background: #fff;
+  padding: 16px 16px 12px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin: 8px 12px 16px;
+}
+
+.endereco {
+  text-align: center;
+  color: #ec5413;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.setinha {
+  width: 14px;
+  height: 14px;
+  color: #ec5413;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+/* ===== SAUDAÇÃO E PONTOS (FLEX BÁSICO) ===== */
+.linha-saudacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.texto-usuario {
+  min-width: 0;
+}
+
+.ola {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+  color: #1f2937;
+}
+
+.link-pontos {
+  color: #ec5413;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.caixa-pontos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 90px;
+}
+
+.pontos {
+  background: #ffe6d1;
+  color: #ec5413;
+  padding: 6px 10px;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* ===== CONTEÚDO ===== */
+.miolo {
+  padding: 0 12px 12px;
+}
+
+.secao {
+  padding-top: 14px;
+}
+
+.titulo-secao {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+}
+
+/* ===== PROMOÇÕES ===== */
+.cartao {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 14px;
+  margin-bottom: 28px;
+}
+
+.moldura-imagem {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.img-promocao {
+  width: 100%;
+}
+
+.texto-forte {
+  font-weight: 700;
+  margin: 10px 4px 4px;
+  color: #111827;
+}
+
+.descricao-promo {
+  color: #4b5563;
+  margin: 0 4px 0;
+  font-size: 0.95rem;
+}
+
+/* ===== PEÇA NOVAMENTE ===== */
+.cartao-pedido {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px; /* mais espaço entre imagem e texto */
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 14px; /* mais respiro interno */
+  margin-bottom: 18px;
+  flex-wrap: nowrap;
+}
+
+.marguerita {
+  width: 115px;
+  height: 115px;
+  border-radius: 12px;
+}
+
+.bloco-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.sabor {
+  font-weight: 700;
+  margin: 10px 0 25px;
+  color: #111827;
+}
+
+.preco {
+  font-weight: 900;
+  margin: 0 0 15px;
+  color: #181311;
+  font-size: 0.95rem;
+}
+
+.botao-adicionar {
+  color: #ec5413;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+/* ===== MENU INFERIOR (FLEX BÁSICO) ===== */
+.barra {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.botao-aba {
+  flex: 1;
+  text-decoration: none;
+  color: #71717a;
+  font-size: 0.75rem;
+  padding: 6px 0;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botao-aba i {
+  margin-bottom: 6px;
+}
+
+.botao-aba.ativa,
+.botao-aba.ativa span {
+  color: #ec5413;
+}
+
+/* ===== RESPONSIVIDADE (AULA 11) ===== */
+@media (max-width: 360px) {
+  html {
+    font-size: 15px;
+  }
+
+  .foto-pizza {
+    width: 84px;
+    height: 84px;
+  }
+
+  .moldura-imagem {
+    height: 140px;
+  }
+}
+
+@media (min-width: 430px) {
+  html {
+    font-size: 17px;
+  }
+
+  .topo {
+    margin: 10px 16px 18px;
+    padding: 18px 18px 12px;
+  }
+
+  .miolo {
+    padding: 0 16px 16px;
+  }
+
+  .moldura-imagem {
+    height: 180px;
+  }
+}
